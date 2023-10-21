@@ -1,15 +1,9 @@
-export default class LavaBrownes {
+export default class Dessert {
   private cost = 0;
 
   constructor(private quantity: number, private kind: string) {
     this.quantity = quantity;
     this.kind = kind;
-
-    if (this.kind === "3 pc lava cakes") {
-      this.cost = 10.85;
-    } else if (this.kind === "8 pc browne cookies") {
-      this.cost = 12.85;
-    }
   }
   public get getQuantity(): number {
     return this.quantity;
